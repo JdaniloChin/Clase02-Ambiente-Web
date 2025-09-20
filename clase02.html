@@ -16,7 +16,7 @@
         <a href="#texto">Texto</a>
         <a href="#listas">Listas</a>
         <a href="#multimedia">Multimedia</a>
-        <a href=""></a>
+        <a href="#formulario">Formulario</a>
     </nav>
     <section id="estructura">
         <h2>Estructura básica</h2>
@@ -57,7 +57,50 @@
             <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
         </audio>
     </section>
-
+    <section id="formulario" class="form-box">
+        <h2>Formulario de ejemplo</h2>
+        <form action="#" method="post">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Juan Perez">
+            <br>
+            <hr>
+            <label>Correo:</label>
+            <input type="email" name="correo" id="correo" required placeholder="usuario@dominio.com">
+            <br>
+            <hr>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha" id="fehca" required>
+            <br>
+            <hr>
+            <label>Genero:</label>
+            <select name="genero" id="genero" required>
+                <option selected>No especifico</option>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                <option>Indefinido</option>
+            </select>
+            <br>
+            <hr>
+            <label>Comentario:</label>
+            <textarea rows="5" cols="60" name="comentario" placeholder="Escribe algún comentario"></textarea>
+            <br>
+            <hr>
+            <label>Calificanos:</label>
+            <input type="range" name="calificacion" id="calificacion" min="1" max="5">
+            <br>
+            <hr>
+            <label>Color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <hr>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <aside>
+        <h3>Dato Interesante</h3>
+        <p>HTML5 se lanzó en 2014 y trajo mejoras como la integración de video, audio y nuevas etiquetas semánticas.</p>
+    </aside>
+    <footer>&copy: 2025 - Universidad Fidélitas - Ambiente Web Cliente Servidor</footer>
     
 </body>
 </html>
